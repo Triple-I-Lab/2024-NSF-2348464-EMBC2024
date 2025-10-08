@@ -14,15 +14,15 @@ This project implements a federated learning system for binary ECG classificatio
 - **Dataset**: PTB Diagnostic ECG Database (14,552 samples)
 
 ## Project Structure
-├── data/
-│   ├── ptbdb_normal.csv
-│   └── ptbdb_abnormal.csv
-├── output/
-├── utils.py              # Data preprocessing & partitioning
-├── model.py              # Stacked CNN architecture
-├── FL_training.py        # Federated client & server
-├── main.py               # Main execution script
-└── README.md
+- **data/** - ECG datasets
+  - `ptbdb_normal.csv` - Normal ECG signals
+  - `ptbdb_abnormal.csv` - Abnormal ECG signals
+- **output/** - Results and saved models
+- `utils.py` - Data preprocessing & partitioning
+- `model.py` - Stacked CNN architecture
+- `FL_training.py` - Federated client & server
+- `main.py` - Main execution script
+- `README.md` - Documentation
 
 ## Installation
 ```bash
@@ -57,4 +57,5 @@ python main.py \
 Quoc Bao Phan, Linh Nguyen, Ngoc Thang Bui, Dinh C. Nguyen, Lan Zhang, and Tuy Tan Nguyen, "Federated Learning for Enhanced ECG Signal Classification with Privacy Awareness," 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2024), Orlando, Florida, USA, 15–19 Jul. 2024, pp. 1–4.
 
 ## License
+
 MIT License.
